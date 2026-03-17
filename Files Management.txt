@@ -1,0 +1,158 @@
+File คือ ข้อมูลโดยรวมเเละเชื่อมโยงถึงกันเเละเป็นการบ่งบอกถึงโปรเเกรม เเละ data ต่างๆในหลากหลายรูปเเบบ ไม่ว่าจะเป็น ตัวเลข ตัวอักษร เเละรวบรวมสารสนเทศต่างๆเข้ากันเป็นเรื่องๆ
+
+ตัวอย่างไฟล์
+document.docx
+
+
+program.cpp
+
+
+image.png
+
+
+data.csv
+
+Management คือ การจัดการระบบข้อมูล มีหน้าที่รับผิดชอบ สำหรับการปรับปรุงเเละจัดระเบียบ หรือ เป็นที่รู้ๆกันว่าเป็นซอฟเเวร์คอม ที่มีหน้าที่รับผิดชอบในการจัดการ กลุุ่มไฟล์ รวมถึงเอกสารบันทึกข้อมูลที่มีการถูกจำกัด
+
+เพราะฉะนั้น File Management คือ คือกระบวนการจัดระเบียบ จัดเก็บ ตั้งชื่อ และดูแลรักษาข้อมูลดิจิทัลบนอุปกรณ์คอมพิวเตอร์หรือคลาวด์อย่างเป็นระบบ เพื่อให้สามารถค้นหา เรียกใช้งาน แก้ไข และสำรองข้อมูลได้อย่างง่ายดาย รวดเร็ว และปลอดภัย ลดปัญหาไฟล์สูญหาย
+
+File มี 2 ประเภท คือ 
+Text Files (Plain Text) เเละ Binary Files
+
+1. ไฟล์ข้อความ (Text File): ไฟล์ที่เก็บข้อมูลในรูปแบบตัว  อักษร ASCII หรือ UTF-8 สามารถเปิดอ่านได้ด้วยโปรแกรม Text Editor ทั่วไป เช่น Notepad, TextEdit
+
+2. ไฟล์ฐานข้อมูลหรือไฟล์ไบนารี (Binary File): ไฟล์ที่เก็บข้อมูลเป็นรหัส 0 และ 1 ที่คอมพิวเตอร์เข้าใจ มักต้องใช้โปรแกรมเฉพาะทางในการเปิด เช่น ไฟล์รูปภาพ, ไฟล์เพลง, หรือไฟล์ฐานข้อมูล
+
+โครงสร้างพื้นฐานของไฟล์ 
+(File Architecture Structure)
+โดยทั่วไปไฟล์ข้อมูลจะมีโครงสร้างเป็นลำดับ
+1. Field (ฟิลด์)
+หน่วยข้อมูลที่เล็กที่สุด
+2. Record (เรคคอร์ด)
+กลุ่มของ Field ที่รวมกันเป็นข้อมูลของหนึ่งรายการ
+3. File (แฟ้มข้อมูล)
+กลุ่มของ Record หลายรายการ
+4. Database (ฐานข้อมูล)
+กลุ่มของไฟล์หลายไฟล์ที่เกี่ยวข้องกัน
+Structure of Directory
+
+1.Single-Level Directory
+2.Two-Level Directory
+3.Tree-Structure Directory
+4.Acyclic Graph Structure
+5.General-Graph Directory Structure
+
+Disk Free Space Management in OS
+
+1.Bit Vecter     
+2.Linked List
+3.Counting 
+4.Grouping
+
+Main Memory Management
+
+User Program
+User Interface
+System Calls
+File Management  Memory Management Process Management
+Network Management Power Management
+Hardware
+
+Structure of Directory
+
+1.Single-Level Directory
+2.Two-Level Directory
+3.Tree-Structure Directory
+4.Acyclic Graph Structure
+5.General-Graph Directory Structure
+
+
+รูปแบบการจัดโครงสร้างไฟล์ (Types of File Architecture)
+1. Sequential File Structure
+ข้อมูลถูกเก็บ เรียงตามลำดับ
+2. Direct / Random Access File
+สามารถเข้าถึงข้อมูล ตำแหน่งใดก็ได้โดยตรง
+3. Indexed File
+มี index (ดัชนี) ช่วยค้นหาข้อมูล
+
+The Architecture of a file System ระบบไฟล์เป็นส่วนสำคัญ ทำหน้าที่ จัดโครงสร้างสำหรับการจัดเก็บ จัดระเบียบ และจัดการข้อมูลบนอุปกรณ์เก็บข้อมูล เช่น ฮาร์ดดิสก์(SSD , USB Drive)
+
+File Handling in java
+- Opening Files
+- Reading from files
+- Writing to files
+- Adding to files
+- Closing the files
+
+
+
+
+File Handling in computer Language
+C++ 
+C#
+C
+Python
+JAVA
+GO
+CSS
+HTML
+KOTLIN
+
+Disk Free Space Management in OS
+
+                           Free Space Management
+
+
+
+
+ประเภทของ File System
+1. FAT (File Allocation Table)
+ใช้ในระบบ Windows รุ่นเก่า
+ข้อดี
+โครงสร้างง่าย
+
+
+ข้อเสีย
+ไม่ปลอดภัยมาก
+
+2. NTFS (New Technology File System)
+ใช้ใน Windows ปัจจุบัน
+ข้อดี
+รองรับไฟล์ขนาดใหญ่
+
+
+มีระบบความปลอดภัย
+3. ext4
+ใช้ใน Linux
+ข้อดี
+เร็ว
+
+
+เสถียร
+
+4. APFS
+ใช้ใน macOS
+ข้อดี
+ออกแบบมาสำหรับ SSD
+
+ofstream ทำหน้าที่เขียนข้อมูลลงไฟล์
+ifstreamทำหน้าที่อ่านข้อมูลจากไฟล์
+fstreamสามารถทำได้ทั้งอ่านและเขียนในไฟล์เดียวกัน
+
+การดำเนินการกับไฟล์ (File Operations)
+การจัดการไฟล์มีหลายรูปแบบ เช่น
+1. Create
+สร้างไฟล์ใหม่
+2. Open
+เปิดไฟล์เพื่ออ่านหรือเขียนข้อมูล
+3. Read
+อ่านข้อมูลจากไฟล์
+4. Write
+เขียนข้อมูลลงไฟล์
+5. Update
+แก้ไขข้อมูลในไฟล์
+6. Delete
+ลบไฟล์
+7. Close
+ปิดไฟล์
+
